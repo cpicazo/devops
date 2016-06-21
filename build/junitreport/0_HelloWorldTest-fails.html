@@ -113,7 +113,7 @@
     
         cur['path.separator'] = ':';
     
-        cur['report.dir'] = '${build.dir}/junitreport';
+        cur['report.dir'] = 'build/junitreport';
     
         cur['src.dir'] = 'src';
     
@@ -131,7 +131,7 @@
     
         cur['sun.io.unicode.encoding'] = 'UnicodeLittle';
     
-        cur['sun.java.command'] = 'org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner HelloWorldTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/home/training/devops/${build.dir}/junitreport/TEST-HelloWorldTest.xml crashfile=/home/training/devops/junitvmwatcher1419483703241266522.properties propsfile=/home/training/devops/junit849835674799062234.properties';
+        cur['sun.java.command'] = 'org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner HelloWorldTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/home/training/devops/build/junitreport/TEST-HelloWorldTest.xml crashfile=/home/training/devops/junitvmwatcher3382497960764246579.properties propsfile=/home/training/devops/junit1767849016135636737.properties';
     
         cur['sun.java.launcher'] = 'SUN_STANDARD';
     
@@ -196,22 +196,19 @@
 <th width="80%">Name</th><th>Tests</th><th>Errors</th><th>Failures</th><th>Skipped</th><th nowrap>Time(s)</th><th nowrap>Time Stamp</th><th>Host</th>
 </tr>
 <tr valign="top" class="Failure">
-<td><a title="Display all tests" href="0_HelloWorldTest.html">HelloWorldTest</a></td><td><a title="Display all tests" href="0_HelloWorldTest.html">2</a></td><td>0</td><td><a title="Display only failures" href="0_HelloWorldTest-fails.html">1</a></td><td>0</td><td>0.200</td><td>2016-06-21T09:08:06</td><td>ubuntu-devops</td>
+<td><a title="Display all tests" href="0_HelloWorldTest.html">HelloWorldTest</a></td><td><a title="Display all tests" href="0_HelloWorldTest.html">2</a></td><td>0</td><td><a title="Display only failures" href="0_HelloWorldTest-fails.html">1</a></td><td>0</td><td>0.187</td><td>2016-06-21T09:09:52</td><td>ubuntu-devops</td>
 </tr>
 </table>
-<h2>Tests</h2>
+<h2>Failures</h2>
 <table class="details" border="0" cellpadding="5" cellspacing="2" width="95%">
 <tr valign="top">
 <th>Name</th><th>Status</th><th width="80%">Type</th><th nowrap>Time(s)</th>
-</tr>
-<tr valign="top" class="TableRowColor">
-<td><a name="testNothing"></a>testNothing</td><td>Success</td><td></td><td>0.001</td>
 </tr>
 <tr valign="top" class="Failure">
 <td><a name="testWillAlwaysFail"></a>testWillAlwaysFail</td><td>Failure</td><td>An error message<br>
 <br>
 <code>junit.framework.AssertionFailedError: An error message<br>	at HelloWorldTest.testWillAlwaysFail(Unknown Source)<br>
-</code></td><td>0.020</td>
+</code></td><td>0.023</td>
 </tr>
 </table>
 <div class="Properties">

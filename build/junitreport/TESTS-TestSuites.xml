@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <testsuites>
-  <testsuite errors="0" failures="1" hostname="ubuntu-devops" id="0" name="HelloWorldTest" package="" skipped="0" tests="2" time="0.2" timestamp="2016-06-21T09:08:06">
+  <testsuite errors="0" failures="1" hostname="ubuntu-devops" id="0" name="HelloWorldTest" package="" skipped="0" tests="2" time="0.187" timestamp="2016-06-21T09:09:52">
       <properties>
           <property name="java.vendor" value="Oracle Corporation" />
 
@@ -78,7 +78,7 @@
 
           <property name="java.vm.version" value="24.51-b03" />
 
-          <property name="report.dir" value="${build.dir}/junitreport" />
+          <property name="report.dir" value="build/junitreport" />
 
           <property name="ant.library.dir" value="/usr/share/ant/lib" />
 
@@ -100,7 +100,7 @@
 
           <property name="java.runtime.name" value="OpenJDK Runtime Environment" />
 
-          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner HelloWorldTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/home/training/devops/${build.dir}/junitreport/TEST-HelloWorldTest.xml crashfile=/home/training/devops/junitvmwatcher1419483703241266522.properties propsfile=/home/training/devops/junit849835674799062234.properties" />
+          <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner HelloWorldTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,/home/training/devops/build/junitreport/TEST-HelloWorldTest.xml crashfile=/home/training/devops/junitvmwatcher3382497960764246579.properties propsfile=/home/training/devops/junit1767849016135636737.properties" />
 
           <property name="java.class.path" value="/home/training/devops/lib/junit-4.10.jar:/home/training/devops/lib/log4j-1.2.17.jar:/home/training/devops/build/jar/HelloWorld.jar:/usr/share/java/ant-launcher-1.9.3.jar:/usr/share/ant/lib/ant.jar:/usr/share/ant/lib/ant-junit.jar:/usr/share/ant/lib/ant-junit4.jar" />
 
@@ -148,9 +148,9 @@
 
       </properties>
 
-      <testcase classname="HelloWorldTest" name="testNothing" time="0.001" />
+      <testcase classname="HelloWorldTest" name="testNothing" time="0.004" />
 
-      <testcase classname="HelloWorldTest" name="testWillAlwaysFail" time="0.02">
+      <testcase classname="HelloWorldTest" name="testWillAlwaysFail" time="0.023">
           <failure message="An error message" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: An error message
 	at HelloWorldTest.testWillAlwaysFail(Unknown Source)
 </failure>
