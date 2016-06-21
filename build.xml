@@ -1,8 +1,8 @@
 <project name="HelloWorld" basedir="." default="main">
 
     <property name="src.dir"     value="src"/>
-    <property name="report.dir"  value="${build.dir}/junitreport"/>
     <property name="build.dir"   value="build"/>
+    <property name="report.dir"  value="${build.dir}/junitreport"/>
     <property name="classes.dir" value="${build.dir}/classes"/>
     <property name="jar.dir"     value="${build.dir}/jar"/>
 
