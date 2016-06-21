@@ -1,7 +1,7 @@
 <project name="HelloWorld" basedir="." default="main">
 
     <property name="src.dir"     value="src"/>
-
+    <property name="report.dir"  value="${build.dir}/junitreport"/>
     <property name="build.dir"   value="build"/>
     <property name="classes.dir" value="${build.dir}/classes"/>
     <property name="jar.dir"     value="${build.dir}/jar"/>
@@ -44,18 +44,27 @@
     </target>
 
     <target name="junit" depends="jar">
+	<mkdir dir="${report.dir}"/>
         <junit printsummary="yes">
             <classpath>
                 <path refid="classpath"/>
                 <path refid="application"/>
             </classpath>
-            
-            <batchtest fork="yes">
+        
+	    <formatter type="xml"/>    
+	
+            <batchtest fork="yes" todir="${report.dir}">
                 <fileset dir="${src.dir}" includes="*Test.java"/>
             </batchtest>
         </junit>
     </target>
 
+    <target name="junitreport" depends="junit">
+        <junitreport todir="${report.dir}">
+            <fileset dir="${report.dir}" includes="TEST-*.xml"/>
+            <report todir="${report.dir}"/>
+        </junitreport>
+    </target>
     <target name="clean-build" depends="clean,jar"/>
 
     <target name="main" depends="clean,run"/>
