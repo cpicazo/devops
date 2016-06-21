@@ -5,7 +5,7 @@
 
 # Package Files #
 *.jar
-!lib
+!/lib
 *.war
 *.ear
 
