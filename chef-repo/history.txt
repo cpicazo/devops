@@ -1,0 +1,500 @@
+git pull
+git push
+sudo visudo
+exit
+cd hello-world-java/
+git pull
+nano ccasares.js 
+git add .
+git commit -m "troleando a casares"
+git push
+nano jbrasero 
+nano smorenor.txt 
+nano colivares1974 
+git add .
+nano ccasares.js 
+git add .
+git commit -m "troleando a moreno, brasero, casares y olivares"
+git push
+git pull
+nano ccasares.js 
+git pull
+git add .
+git pull
+git commit -m "troleando a moreno, brasero, casares y olivares"
+git push
+git push
+git pull
+ls
+rm cpicazo.txt 
+git push
+git add .
+git add --all .
+git commit -m "borrando mi fichero"
+git push
+touch casaresesdevitoria.js
+git add .
+git commit -m "troleando a quasares"
+git push
+git pull
+git push
+git pull
+touch CASARES_DEJA_DE_BORRAR_COSAS.YA
+git add .
+git commit -m "casares, vete a un curso de EXCELL y IMEI-Ls"
+git push
+sudo apt-get install jenkins
+wget -q -O - https://jenkins-ci.org/debian/jenkins-ci.org.key | sudo apt-key add -
+sudo sh -c 'echo deb http://pkg.jenkins-ci.org/debian-stable binary/ > /etc/apt/sources.list.d/jenkins.list'
+sudo apt-get update
+sudo apt-get install jenkins
+sudo apt-get install jenkins
+sudo apt-get update
+sudo apt-get install jenkins
+sudo /etc/init.d/jenkins restart
+sudo /etc/init.d/jenkins restart
+sudo /etc/init.d/jenkins restart
+javac
+sudo apt-get install default-jdk
+jsava c
+javac
+javac HelloWorld.java 
+java HelloWorld
+exit
+cd hello-world-java/
+git pull
+git pull
+git pull
+more DOCS/README.md 
+git pull
+ls
+rm HelloWorld.class 
+git pull
+more DOCS/README.md 
+cd ..
+git clone https://github.com/cpicazo/devops.git
+ls
+cd devops/
+ls
+atom README.md 
+mkdir src
+mkdir src/oata
+vi src/oata/HelloWorld.java
+more src/oata/HelloWorld.java 
+mkdir -p build/classes
+javac -sourcepath src -d build/classes src/oata/HelloWorld.java
+java -cp build/classes oata.HelloWorld
+git add .
+git commit -m "HelloWorld class working & README updated"
+git push
+echo Main-Class: oata.HelloWorld>myManifest
+ls
+mkdir build/jar
+jar cfm build/jar/HelloWorld.jar myManifest -C build/classes .
+java -jar build/jar/HelloWorld.jar 
+git add .
+git commit -m "creating Manifest File"
+touch build.xml
+git add .
+git commit -m "creating build.xml file"
+git push
+vi build.xml 
+sudo apt-get install ant
+clear
+ant clean
+ant compile
+ant jar
+ant run
+git add .
+git commit -m "updating build.xml"
+git push
+echo "">build.xml 
+vi build.xml 
+git commit -a -m "Enhance build.xml"
+ant run
+mkdir lib
+cd lib
+wget http://www.apache.org/dist/logging/log4j/1.2.17/log4j-1.2.17.tar.gz 
+gunzip log4j-1.2.17.tar.gz 
+ls
+untar log4j-1.2.17.tar 
+tar xf log4j-1.2.17.tar 
+ls
+cd apache-log4j-1.2.17/
+ls
+mv log4j-1.2.17.jar  ../
+cd ..
+ls
+rm -rf apache-log4j-1.2.17/
+rm log4j-1.2.17.tar 
+ls
+ant compile
+cd ..
+ant run
+ant run
+git commit -a -m "used log4j"
+git push
+vi .gitignore 
+git commit -a -m "add .jar"
+git push
+git status
+vi .gitignore 
+ls
+cd lib/
+ls
+cd ..
+vi .gitignore 
+git commit -a -m "add .jar"
+git status
+vi .gitignore 
+git commit -a -m "add .jar"
+git status
+git push
+git status
+git add .
+git commit -m "add .jar"
+vi .gitignore 
+git add .
+git commit -m "add .jar"
+git status
+cd lib/
+git add .
+git status
+cd ..
+git commit -m "add .jar"
+git push
+git rm --cache -r build
+git status
+git commit -m "removed helloworld.jar"
+vi .gitignore 
+git push
+cd src/
+vi HelloWorldTest.java
+cd ..
+cd lib/
+wget http://downloads.sourceforge.net/project/junit/junit/4.10/junit-4.10.jar
+ls
+cd ..
+vi build.xml 
+git add .
+git commit -m "adding junit test"
+ant junit
+git push
+vi .gitignore 
+git add .
+
+git commit -m "adding junit test"
+git push
+vi build.xml 
+git add .
+git commit -m "added junit target and report to build.xml"
+git status
+vi build.xml 
+gi push
+git push
+ant junitreport
+vi build.xml
+git add .
+git commit -m "added junit target and report to build.xml"
+gi push
+git push
+ant junitreport
+ls
+rm -rf "${build.dir}"
+rm -rf ${build.dir}
+ls
+git add .
+git add --all .
+git commit -m "removed bug"
+git status
+git push
+vi src/HelloWorldTest.java 
+git commit -a -m "modified test"
+git push
+maven
+cd ..
+wget http://apache.cu.be/maven/maven-3/3.3.9/binaries/apache-maven-3.3.9-bin.tar.gz
+gunzip apache-maven-3.3.9-bin.tar.gz 
+ls
+cd devops/
+sudo apt-get install maven
+sudo apt-get install maven
+git clone https://github.com/cpicazo/devopsmaven.git
+ls
+mv devopsmaven/ ../
+cd ..
+ls
+cd devopsmaven/
+ls
+mvn --version
+mvn archetype:generate -DgroupId=com.mycompany.app -DartifactId=my-app -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
+nano /etc/maven/settings.xml 
+sudo nano /etc/maven/settings.xml 
+sudo nano /etc/maven/settings.xml 
+mvn archetype:generate -DgroupId=com.mycompany.app -DartifactId=my-app -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
+sudo nano /etc/maven/settings.xml 
+mvn archetype:generate -DgroupId=com.mycompany.app -DartifactId=my-app -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false
+mvn package
+ls
+cd my-app/
+mvn package
+java -cp target/my-app-1.0-SNAPSHOT.jar com.mycompany.app.App
+mvn package
+mvn site
+mv * ../
+ls
+cd ..
+rm my-app/
+rm -rf my-app/
+ls
+vi src/test/java/com/mycompany/app/AppTest.java 
+mvn package
+vi src/test/java/com/mycompany/app/AppTest.java 
+mvn package
+git add .
+git commit -m "Hello World con Maven"
+git push
+which mvn
+ls -l /usr/bin/mvn
+ls -l /etc/alternatives/mvn
+vi src/test/java/com/mycompany/app/AppTest.java 
+git commit -a -m "modified test"
+git status
+git push
+cd ..
+wget https://get.docker.com/
+mv index.html installDocker.sh
+sudo chmod +x installDocker.sh 
+./installDocker.sh 
+sudo usermod -aG docker training
+docker
+sudo docker run -it ubuntu
+docker ps
+sudo docker run -it ubuntu
+sudo docker run -it ubuntu
+sudo service docker start
+sudo docker run -it ubuntu
+mkdir /etc/systemd/system/docker.service.d
+sudo mkdir /etc/systemd/system/docker.service.d
+cd /etc/systemd/system/docker.service.d
+sudo vi http-proxy.conf
+sudo systemctl daemon-reload
+sudo rm http-proxy.conf 
+cd /etc/defaults/docker.io
+sudo vi /etc/defaults/docker.io
+cd /etc/
+sudo mkdir defaults
+sudo vi /etc/defaults/docker.io
+sudo service docker.io restart
+sudo service docker restart
+sudo docker run -it ubuntu
+sudo reboot
+sudo docker run -it ubuntu
+sudo docker run -it ubuntu /bin/bash
+docker ps
+docker ps
+docker stop 2e494f36886a 05c3f08290fa 4480ceb89dbf
+docker ps
+sudo apt-get install jenkins
+ls
+cd hello-world-java/
+ls
+vi HelloLuisNog.java 
+git add .
+git commit -m "luigi"
+git push
+git pull
+git push
+docker -p
+sudo docker ps
+sudo docker ps
+sudo docker ps -a
+sudo docker ps -a
+docker run ubuntu
+cocker ps
+docker ps
+sudo docker ps
+docker ps -a
+docker run -it ubuntu /bin/bash 
+docker start silly_sammet
+docker ps
+docker exec silly_sammet ip addr
+docker exec silly_sammet /etc/init.d/apache2 start
+docker run ubuntu echo Hola Mundo
+docker images
+docker run debian:jessie echo hola
+docker run debian:jessie echo hola
+docker images
+time docker run debian:jessie echo hola
+time echo hola
+time docker run debian:jessie echo hola
+docker ps -a
+docker commit silly_sammet
+docker images
+docker commit silly_sammet ubuntu:apache
+docker images
+docker rm ca0a60c60260
+docker rmi ca0a60c60260
+docker run -it --name contenedorapache1 ubuntu:apache /bin/bash 
+docker ps
+docker stop silly_sammet
+docker run -it ubuntu /bin/bash 
+ls
+cd hello-world-java/
+git pull
+cd ..
+git clone https://github.com/ccasares/docker.git
+cd docker/
+ls
+more README.md 
+docker ps -a
+docker ps -a
+docker ps -a | wc -l
+docker ps -a
+docker start 2e494f36886a
+docker ps
+docker attach 2e494f36886a
+docker start -p 7001:80 2e494f36886a
+docker start -p7001:80 2e494f36886a
+docker start --help
+docker images
+docker run -p 7001:80 ubuntu:apache
+docker ps
+docker run -p 7001:80 ubuntu:apache
+docker ps
+ps -a
+docker ps -a
+docker history
+docker history ubuntu
+docker run -it -p7001:80 ubuntu:apache
+docker run -it -p 7001:80 ubuntu:apache
+cd ..
+mkdir dockerfile
+cd dockerfile/
+vi Dockerfile
+docker build -t myrepo:oraclelinuxmiercolesbash .
+docker run -d myrepo:oraclelinuxmiercolesbash
+docker ps
+docker ps -a
+docker run -it myrepo:oraclelinuxmiercolesbash
+docker images
+exit
+sudo -i
+docker-compose --version
+ls
+mkdir dockercomposer
+cd dockercomposer/
+vi miconfig.yml
+more miconfig.yml 
+docker-compose -f miconfig.yml up
+docker-compose -f miconfig.yml up -d
+docker ps
+docker-compose -f miconfig.yml stop
+vi miconfig.yml
+docker-compose -f miconfig.yml down
+docker-compose -f miconfig.yml up -d
+docker-compose -f miconfig.yml ps
+docker-compose inspect dockercomposer_wordpress_1 | grep ipadd
+docker inspect dockercomposer_wordpress_1 | grep ipadd
+docker inspect dockercomposer_wordpress_1
+docker-compose -f miconfig.yml scale wordpress=4
+docker ps
+docker-compose -f miconfig.yml ps
+docker-compose -f miconfig.yml scale wordpress=2
+docker-compose inspect dockercomposer_wordpress_2 | grep -i ipadd
+docker inspect dockercomposer_wordpress_2 | grep -i ipadd
+docker-compose -f miconfig.yml down
+cd ..
+ls
+cd hello-world-java/
+git pull
+git pull
+ls
+atom chef.md 
+ohai--version
+ohai --version
+git clone http://github.com/cpicazo/chef_workstation_cookbooks.git
+ls
+cd chef_workstation_cookbooks/
+ls
+cd ..
+mv chef_workstation_cookbooks/ chef-repo/
+cd chef-repo/
+ls
+ls
+cd ..
+rm -rf chef-repo/
+ls
+git clone http://github.com/cpicazo/chef_workstation_cookbooks.git
+cp -R chef_workstation_cookbooks/apache/ devops/chef-repo/
+cp -R chef_workstation_cookbooks/workstation/ devops/chef-repo/
+cd devops/chef-repo/
+ls
+knife cookbook list
+mv -r apache/ cookbooks/
+mv  apache/ cookbooks/apache
+mv  workstation/ cookbooks/workstation
+cd cookbooks/apache/
+berks install
+bersk upload
+berks upload
+knife cookbook
+knife cookbook list
+cd ../workstation/
+berks install
+berks upload
+knife cookbook list
+exit
+knife node list
+sudo knife node list
+ls
+cd devops
+ls
+cd chef-repo/
+knife node list
+knife bootstrap 54.161.145.32 -x chef -P MyPassword --sudo -N node1
+clear
+knife node list
+knife node show node1
+knife node run_list add node1 "recipe[apache]"
+ls
+chef generate cookbook cookbooks/myhaproxy
+nano cookbooks/myhaproxy/metadata.rb 
+cd devops
+cd chef-repo/
+knife node show node1 -a ipaddress
+knife node show node1 -a public_ipv4
+knife node show node1
+knife node show node3 -a cloud
+nano cookbooks/myhaproxy/recipes/default.rb 
+nano cookbooks/myhaproxy/recipes/default.rb 
+cd cookbooks/myhaproxy/
+berks install
+berks upload
+knife cookbook lits
+knife cookbook list
+knife bootstrap 54.159.239.198 -x chef -P MyPassword --sudo -N node2
+knife node show node2
+knife node run_list add node2 "recipe[myhaproxy]"
+cd ..
+cd ..
+knife ssh"*:*" -x chef -P MyPassword "sudo chef-client"
+knife ssh "*:*" -x chef -P MyPassword "sudo chef-client"
+knife bootstrap -x chef --sudo -N node3
+knife bootstrap 54.158.121.196 -x chef --sudo -N node3
+knife node run_list add node3 "recipe[apache]"
+cd cookbooks/myhaproxy/
+nano metadata.rb 
+nano recipes/default.rb 
+knife node run_list add node2 "recipe[myhaproxy]"
+knife ssh "*:node2" -x chef -P MyPassword "sudo chef-client"
+knife ssh "*:node3" -x chef -P MyPassword "sudo chef-client"
+berks install
+berks update
+berks upload
+berks upload
+nano recipes/default.rb 
+berks upload
+knife ssh "*:node2" -x chef -P MyPassword "sudo chef-client"
+knife node show node1
+knife node show node1 -a cloud
