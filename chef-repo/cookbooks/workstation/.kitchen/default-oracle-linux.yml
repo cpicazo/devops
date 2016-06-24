@@ -1,0 +1,7 @@
+---
+ssh_key: "/home/chef/cookbooks/workstation/.kitchen/docker_id_rsa"
+image_id: 9a6bf265c400
+container_id: ef433ad41cba1ecb6b1f4fc198e5c7e95790108eb6fb820ffb5f7b22e75a8d4f
+hostname: localhost
+port: 32772
+last_action: converge

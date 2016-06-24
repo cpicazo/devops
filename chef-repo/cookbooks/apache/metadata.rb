@@ -1,0 +1,7 @@
+name 'apache'
+maintainer 'Carlos Picazo'
+maintainer_email 'cpikzo@gmail.com'
+license 'copyright minabo'
+description 'Installs/Configures apache'
+long_description 'Installs/Configures apache'
+version '0.2.1'

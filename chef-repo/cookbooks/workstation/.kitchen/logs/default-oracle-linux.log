@@ -1,0 +1,235 @@
+I, [2016-06-23T09:57:17.263012 #25326]  INFO -- default-oracle-linux: -----> Creating <default-oracle-linux>...
+I, [2016-06-23T09:57:17.389040 #25326]  INFO -- default-oracle-linux: Sending build context to Docker daemon 53.76 kB
+I, [2016-06-23T09:57:17.389552 #25326]  INFO -- default-oracle-linux: Sending build context to Docker daemon 
+I, [2016-06-23T09:57:17.446339 #25326]  INFO -- default-oracle-linux: Step 0 : FROM oraclelinux:7
+I, [2016-06-23T09:57:17.871590 #25326]  INFO -- default-oracle-linux: 7: Pulling from oraclelinux
+I, [2016-06-23T09:57:17.873992 #25326]  INFO -- default-oracle-linux: 63e1c02817fc: Pulling fs layer
+I, [2016-06-23T09:57:17.875848 #25326]  INFO -- default-oracle-linux: 575e955ac1f9: Pulling fs layer
+I, [2016-06-23T09:57:17.876280 #25326]  INFO -- default-oracle-linux: 3690474eb5b4: Already exists
+I, [2016-06-23T09:57:18.037525 #25326]  INFO -- default-oracle-linux: 575e955ac1f9: Verifying Checksum
+I, [2016-06-23T09:57:18.038598 #25326]  INFO -- default-oracle-linux: 575e955ac1f9: Download complete
+I, [2016-06-23T09:57:22.723614 #25326]  INFO -- default-oracle-linux: 63e1c02817fc: Verifying Checksum
+I, [2016-06-23T09:57:22.724359 #25326]  INFO -- default-oracle-linux: 63e1c02817fc: Download complete
+I, [2016-06-23T09:57:43.928221 #25326]  INFO -- default-oracle-linux: 63e1c02817fc: Pull complete
+I, [2016-06-23T09:57:44.061951 #25326]  INFO -- default-oracle-linux: 575e955ac1f9: Pull complete
+I, [2016-06-23T09:57:44.062128 #25326]  INFO -- default-oracle-linux: Digest: sha256:da1f6e6bed7bb453dedb3cdd4c9cb56f87b01ea27a56d17427c8f7cfb1e84622
+I, [2016-06-23T09:57:44.077513 #25326]  INFO -- default-oracle-linux: Status: Downloaded newer image for oraclelinux:7
+I, [2016-06-23T09:57:44.078816 #25326]  INFO -- default-oracle-linux:  ---> 575e955ac1f9
+I, [2016-06-23T09:57:44.079254 #25326]  INFO -- default-oracle-linux: Step 1 : RUN yum clean all
+I, [2016-06-23T09:57:44.296015 #25326]  INFO -- default-oracle-linux:  ---> Running in 64e9461dea55
+I, [2016-06-23T09:57:45.280456 #25326]  INFO -- default-oracle-linux: Loaded plugins: ulninfo
+I, [2016-06-23T09:57:45.313789 #25326]  INFO -- default-oracle-linux: Cleaning repos: ol7_UEKR3 ol7_latest
+I, [2016-06-23T09:57:45.314751 #25326]  INFO -- default-oracle-linux: Cleaning up everything
+I, [2016-06-23T09:57:49.472586 #25326]  INFO -- default-oracle-linux:  ---> c96c9b131644
+I, [2016-06-23T09:57:50.969922 #25326]  INFO -- default-oracle-linux: Removing intermediate container 64e9461dea55
+I, [2016-06-23T09:57:50.970742 #25326]  INFO -- default-oracle-linux: Step 2 : RUN yum install -y sudo openssh-server openssh-clients which curl
+I, [2016-06-23T09:57:51.164635 #25326]  INFO -- default-oracle-linux:  ---> Running in 8af04e70e748
+I, [2016-06-23T09:57:51.917444 #25326]  INFO -- default-oracle-linux: Loaded plugins: ulninfo
+I, [2016-06-23T09:58:47.393448 #25326]  INFO -- default-oracle-linux: Package openssh-server-6.6.1p1-25.el7_2.x86_64 already installed and latest version
+I, [2016-06-23T09:58:47.646814 #25326]  INFO -- default-oracle-linux: Package openssh-clients-6.6.1p1-25.el7_2.x86_64 already installed and latest version
+I, [2016-06-23T09:58:47.810618 #25326]  INFO -- default-oracle-linux: Package curl-7.29.0-25.0.1.el7.x86_64 already installed and latest version
+I, [2016-06-23T09:58:47.811942 #25326]  INFO -- default-oracle-linux: Resolving Dependencies
+I, [2016-06-23T09:58:48.687996 #25326]  INFO -- default-oracle-linux: --> Running transaction check
+I, [2016-06-23T09:58:48.689447 #25326]  INFO -- default-oracle-linux: ---> Package sudo.x86_64 0:1.8.6p7-17.el7_2 will be installed
+I, [2016-06-23T09:58:48.762587 #25326]  INFO -- default-oracle-linux: ---> Package which.x86_64 0:2.20-7.el7 will be installed
+I, [2016-06-23T09:58:49.153383 #25326]  INFO -- default-oracle-linux: --> Finished Dependency Resolution
+I, [2016-06-23T09:58:49.170679 #25326]  INFO -- default-oracle-linux: 
+I, [2016-06-23T09:58:49.170762 #25326]  INFO -- default-oracle-linux: Dependencies Resolved
+I, [2016-06-23T09:58:49.173774 #25326]  INFO -- default-oracle-linux: 
+I, [2016-06-23T09:58:49.173865 #25326]  INFO -- default-oracle-linux: ================================================================================
+I, [2016-06-23T09:58:49.173949 #25326]  INFO -- default-oracle-linux:  Package       Arch           Version                  Repository          Size
+I, [2016-06-23T09:58:49.174140 #25326]  INFO -- default-oracle-linux: ================================================================================
+I, [2016-06-23T09:58:49.174202 #25326]  INFO -- default-oracle-linux: Installing:
+I, [2016-06-23T09:58:49.174272 #25326]  INFO -- default-oracle-linux:  sudo          x86_64         1.8.6p7-17.el7_2         ol7_latest         732 k
+I, [2016-06-23T09:58:49.174334 #25326]  INFO -- default-oracle-linux:  which         x86_64         2.20-7.el7               ol7_latest          40 k
+I, [2016-06-23T09:58:49.174409 #25326]  INFO -- default-oracle-linux: 
+I, [2016-06-23T09:58:49.174466 #25326]  INFO -- default-oracle-linux: Transaction Summary
+I, [2016-06-23T09:58:49.174518 #25326]  INFO -- default-oracle-linux: ================================================================================
+I, [2016-06-23T09:58:49.174570 #25326]  INFO -- default-oracle-linux: Install  2 Packages
+I, [2016-06-23T09:58:49.174620 #25326]  INFO -- default-oracle-linux: 
+I, [2016-06-23T09:58:49.176896 #25326]  INFO -- default-oracle-linux: Total download size: 772 k
+I, [2016-06-23T09:58:49.177774 #25326]  INFO -- default-oracle-linux: Installed size: 2.5 M
+I, [2016-06-23T09:58:49.178653 #25326]  INFO -- default-oracle-linux: Downloading packages:
+I, [2016-06-23T09:58:49.690191 #25326]  INFO -- default-oracle-linux: --------------------------------------------------------------------------------
+I, [2016-06-23T09:58:49.691365 #25326]  INFO -- default-oracle-linux: Total                                              1.5 MB/s | 772 kB  00:00     
+I, [2016-06-23T09:58:49.700881 #25326]  INFO -- default-oracle-linux: Running transaction check
+I, [2016-06-23T09:58:49.723597 #25326]  INFO -- default-oracle-linux: Running transaction test
+I, [2016-06-23T09:58:49.769475 #25326]  INFO -- default-oracle-linux: Transaction test succeeded
+I, [2016-06-23T09:58:49.771050 #25326]  INFO -- default-oracle-linux: Running transaction
+I, [2016-06-23T09:58:50.110237 #25326]  INFO -- default-oracle-linux:   Installing : which-2.20-7.el7.x86_64                                      1/2 
+I, [2016-06-23T09:58:50.110401 #25326]  INFO -- default-oracle-linux: install-info: /usr/share/info/dir: could not read (No such file or directory) and could not create (No such file or directory)
+I, [2016-06-23T09:58:50.564625 #25326]  INFO -- default-oracle-linux:   Installing : sudo-1.8.6p7-17.el7_2.x86_64                                 2/2 
+I, [2016-06-23T09:58:50.637420 #25326]  INFO -- default-oracle-linux:   Verifying  : sudo-1.8.6p7-17.el7_2.x86_64                                 1/2 
+I, [2016-06-23T09:58:50.788033 #25326]  INFO -- default-oracle-linux:   Verifying  : which-2.20-7.el7.x86_64                                      2/2 
+I, [2016-06-23T09:58:50.788340 #25326]  INFO -- default-oracle-linux: 
+I, [2016-06-23T09:58:50.788403 #25326]  INFO -- default-oracle-linux: Installed:
+I, [2016-06-23T09:58:50.788460 #25326]  INFO -- default-oracle-linux:   sudo.x86_64 0:1.8.6p7-17.el7_2            which.x86_64 0:2.20-7.el7           
+I, [2016-06-23T09:58:50.788512 #25326]  INFO -- default-oracle-linux: 
+I, [2016-06-23T09:58:50.790019 #25326]  INFO -- default-oracle-linux: Complete!
+I, [2016-06-23T09:59:38.138377 #25326]  INFO -- default-oracle-linux:  ---> e94a1fc8b5b8
+I, [2016-06-23T09:59:39.972096 #25326]  INFO -- default-oracle-linux: Removing intermediate container 8af04e70e748
+I, [2016-06-23T09:59:39.972711 #25326]  INFO -- default-oracle-linux: Step 3 : RUN ssh-keygen -t rsa -f /etc/ssh/ssh_host_rsa_key -N ''
+I, [2016-06-23T09:59:40.160095 #25326]  INFO -- default-oracle-linux:  ---> Running in 04765a9eab08
+I, [2016-06-23T09:59:41.200464 #25326]  INFO -- default-oracle-linux: Generating public/private rsa key pair.
+I, [2016-06-23T09:59:41.200607 #25326]  INFO -- default-oracle-linux: Your identification has been saved in /etc/ssh/ssh_host_rsa_key.
+I, [2016-06-23T09:59:41.200682 #25326]  INFO -- default-oracle-linux: Your public key has been saved in /etc/ssh/ssh_host_rsa_key.pub.
+I, [2016-06-23T09:59:41.200740 #25326]  INFO -- default-oracle-linux: The key fingerprint is:
+I, [2016-06-23T09:59:41.200815 #25326]  INFO -- default-oracle-linux: bb:22:9a:c7:dc:0f:c3:7c:c1:72:ac:dc:fd:d3:f6:eb root@010970c559ee
+I, [2016-06-23T09:59:41.200874 #25326]  INFO -- default-oracle-linux: The key's randomart image is:
+I, [2016-06-23T09:59:41.201030 #25326]  INFO -- default-oracle-linux: +--[ RSA 2048]----+
+I, [2016-06-23T09:59:41.201086 #25326]  INFO -- default-oracle-linux: |                 |
+I, [2016-06-23T09:59:41.201138 #25326]  INFO -- default-oracle-linux: |                 |
+I, [2016-06-23T09:59:41.201189 #25326]  INFO -- default-oracle-linux: |                 |
+I, [2016-06-23T09:59:41.201276 #25326]  INFO -- default-oracle-linux: |       o         |
+I, [2016-06-23T09:59:41.201338 #25326]  INFO -- default-oracle-linux: |      . S        |
+I, [2016-06-23T09:59:41.201390 #25326]  INFO -- default-oracle-linux: |     + = +       |
+I, [2016-06-23T09:59:41.201537 #25326]  INFO -- default-oracle-linux: |   o .B + .  .   |
+I, [2016-06-23T09:59:41.201595 #25326]  INFO -- default-oracle-linux: |   .= o+ . .. o  |
+I, [2016-06-23T09:59:41.201646 #25326]  INFO -- default-oracle-linux: |  oo . oo   .o.Eo|
+I, [2016-06-23T09:59:41.201697 #25326]  INFO -- default-oracle-linux: +-----------------+
+I, [2016-06-23T09:59:44.565601 #25326]  INFO -- default-oracle-linux:  ---> df82070c01db
+I, [2016-06-23T09:59:46.245758 #25326]  INFO -- default-oracle-linux: Removing intermediate container 04765a9eab08
+I, [2016-06-23T09:59:46.246370 #25326]  INFO -- default-oracle-linux: Step 4 : RUN ssh-keygen -t dsa -f /etc/ssh/ssh_host_dsa_key -N ''
+I, [2016-06-23T09:59:46.409837 #25326]  INFO -- default-oracle-linux:  ---> Running in ecdd8d0db855
+I, [2016-06-23T09:59:47.007693 #25326]  INFO -- default-oracle-linux: Generating public/private dsa key pair.
+I, [2016-06-23T09:59:47.007929 #25326]  INFO -- default-oracle-linux: Your identification has been saved in /etc/ssh/ssh_host_dsa_key.
+I, [2016-06-23T09:59:47.007997 #25326]  INFO -- default-oracle-linux: Your public key has been saved in /etc/ssh/ssh_host_dsa_key.pub.
+I, [2016-06-23T09:59:47.008054 #25326]  INFO -- default-oracle-linux: The key fingerprint is:
+I, [2016-06-23T09:59:47.008107 #25326]  INFO -- default-oracle-linux: 3d:d3:4d:4b:4d:7d:4a:ab:ad:82:3e:18:f2:60:b0:98 root@010970c559ee
+I, [2016-06-23T09:59:47.008181 #25326]  INFO -- default-oracle-linux: The key's randomart image is:
+I, [2016-06-23T09:59:47.008238 #25326]  INFO -- default-oracle-linux: +--[ DSA 1024]----+
+I, [2016-06-23T09:59:47.008314 #25326]  INFO -- default-oracle-linux: |                o|
+I, [2016-06-23T09:59:47.008369 #25326]  INFO -- default-oracle-linux: |              .oo|
+I, [2016-06-23T09:59:47.008421 #25326]  INFO -- default-oracle-linux: |             .ooo|
+I, [2016-06-23T09:59:47.008472 #25326]  INFO -- default-oracle-linux: |  .      . . +o. |
+I, [2016-06-23T09:59:47.008522 #25326]  INFO -- default-oracle-linux: | o o    S + .oo  |
+I, [2016-06-23T09:59:47.008593 #25326]  INFO -- default-oracle-linux: |E . + .    o. .  |
+I, [2016-06-23T09:59:47.008721 #25326]  INFO -- default-oracle-linux: |   . + o .   .   |
+I, [2016-06-23T09:59:47.008775 #25326]  INFO -- default-oracle-linux: |      o o . .    |
+I, [2016-06-23T09:59:47.008827 #25326]  INFO -- default-oracle-linux: |       ... .     |
+I, [2016-06-23T09:59:47.008879 #25326]  INFO -- default-oracle-linux: +-----------------+
+I, [2016-06-23T09:59:49.820326 #25326]  INFO -- default-oracle-linux:  ---> 39b84fa5fd13
+I, [2016-06-23T09:59:51.492603 #25326]  INFO -- default-oracle-linux: Removing intermediate container ecdd8d0db855
+I, [2016-06-23T09:59:51.493203 #25326]  INFO -- default-oracle-linux: Step 5 : RUN if ! getent passwd kitchen; then useradd -d /home/kitchen -m -s /bin/bash kitchen; fi
+I, [2016-06-23T09:59:51.642750 #25326]  INFO -- default-oracle-linux:  ---> Running in 9bcc446a600e
+I, [2016-06-23T09:59:55.192620 #25326]  INFO -- default-oracle-linux:  ---> 1630263553df
+I, [2016-06-23T09:59:56.869762 #25326]  INFO -- default-oracle-linux: Removing intermediate container 9bcc446a600e
+I, [2016-06-23T09:59:56.870359 #25326]  INFO -- default-oracle-linux: Step 6 : RUN echo kitchen:kitchen | chpasswd
+I, [2016-06-23T09:59:57.046760 #25326]  INFO -- default-oracle-linux:  ---> Running in ef5ea49de6b3
+I, [2016-06-23T10:00:00.579634 #25326]  INFO -- default-oracle-linux:  ---> 31dad493da26
+I, [2016-06-23T10:00:02.307962 #25326]  INFO -- default-oracle-linux: Removing intermediate container ef5ea49de6b3
+I, [2016-06-23T10:00:02.309162 #25326]  INFO -- default-oracle-linux: Step 7 : RUN echo 'kitchen ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers
+I, [2016-06-23T10:00:03.856933 #25326]  INFO -- default-oracle-linux:  ---> Running in 7b42a5b4bda8
+I, [2016-06-23T10:00:07.272605 #25326]  INFO -- default-oracle-linux:  ---> 24722fc0e314
+I, [2016-06-23T10:00:09.022020 #25326]  INFO -- default-oracle-linux: Removing intermediate container 7b42a5b4bda8
+I, [2016-06-23T10:00:09.022787 #25326]  INFO -- default-oracle-linux: Step 8 : RUN mkdir -p /etc/sudoers.d
+I, [2016-06-23T10:00:09.243371 #25326]  INFO -- default-oracle-linux:  ---> Running in a606ac7072c0
+I, [2016-06-23T10:00:12.664597 #25326]  INFO -- default-oracle-linux:  ---> bead9d7d5745
+I, [2016-06-23T10:00:14.429932 #25326]  INFO -- default-oracle-linux: Removing intermediate container a606ac7072c0
+I, [2016-06-23T10:00:14.430818 #25326]  INFO -- default-oracle-linux: Step 9 : RUN echo 'kitchen ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers.d/kitchen
+I, [2016-06-23T10:00:14.630852 #25326]  INFO -- default-oracle-linux:  ---> Running in da1bc6dafd64
+I, [2016-06-23T10:00:18.134606 #25326]  INFO -- default-oracle-linux:  ---> fc5b3ca761f0
+I, [2016-06-23T10:00:19.813905 #25326]  INFO -- default-oracle-linux: Removing intermediate container da1bc6dafd64
+I, [2016-06-23T10:00:19.815034 #25326]  INFO -- default-oracle-linux: Step 10 : RUN chmod 0440 /etc/sudoers.d/kitchen
+I, [2016-06-23T10:00:19.986834 #25326]  INFO -- default-oracle-linux:  ---> Running in f1f7d1a6d13d
+I, [2016-06-23T10:00:23.424615 #25326]  INFO -- default-oracle-linux:  ---> 85fecead9fde
+I, [2016-06-23T10:00:25.165832 #25326]  INFO -- default-oracle-linux: Removing intermediate container f1f7d1a6d13d
+I, [2016-06-23T10:00:25.166636 #25326]  INFO -- default-oracle-linux: Step 11 : RUN [ ! -d /home/kitchen/.ssh ] && mkdir /home/kitchen/.ssh
+I, [2016-06-23T10:00:25.329792 #25326]  INFO -- default-oracle-linux:  ---> Running in d3bf6d298c82
+I, [2016-06-23T10:00:28.688215 #25326]  INFO -- default-oracle-linux:  ---> f1147a95f4fa
+I, [2016-06-23T10:00:30.396453 #25326]  INFO -- default-oracle-linux: Removing intermediate container d3bf6d298c82
+I, [2016-06-23T10:00:30.397037 #25326]  INFO -- default-oracle-linux: Step 12 : RUN chown -R kitchen /home/kitchen/.ssh
+I, [2016-06-23T10:00:30.570790 #25326]  INFO -- default-oracle-linux:  ---> Running in 2a25af7bf131
+I, [2016-06-23T10:00:34.020641 #25326]  INFO -- default-oracle-linux:  ---> 62fb5780847d
+I, [2016-06-23T10:00:35.758020 #25326]  INFO -- default-oracle-linux: Removing intermediate container 2a25af7bf131
+I, [2016-06-23T10:00:35.758901 #25326]  INFO -- default-oracle-linux: Step 13 : RUN chmod 0700 /home/kitchen/.ssh
+I, [2016-06-23T10:00:35.957369 #25326]  INFO -- default-oracle-linux:  ---> Running in 37f2cefdf971
+I, [2016-06-23T10:00:39.356602 #25326]  INFO -- default-oracle-linux:  ---> cee091ce91dc
+I, [2016-06-23T10:00:41.081627 #25326]  INFO -- default-oracle-linux: Removing intermediate container 37f2cefdf971
+I, [2016-06-23T10:00:41.082330 #25326]  INFO -- default-oracle-linux: Step 14 : RUN echo 'ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDH2agrOHKfyThkJwgvWZAfi26iDkbO0o2bQwKNs6khOcv7BDamsy9eAxpJo7H8cPWbZqfEq3mQDZGxQpiR/hAuCv3G2jP7FXwKlhHc3TBGAuldSTZbinTjTUizajxNyWiyWcapY6nj7FH7KRj2c8M5vOEPCGeKGDqh3qmg9b0Jqrl2rMELuhA3kPyVu3SaqF0tjoF+MUesrNERbK6Hw8q/mCx5WU9zzNveTmZjKJLg6iROVYT1wpkq3uhQEhTj95X40nplY759nRBgeQboczPpSxAE8Pp/bCpM5699kSrIIAxCXxpch9jllsaKUrOOLSiFCDwK6ZC5wFS7vgsC1WIX kitchen_docker_key' >> /home/kitchen/.ssh/authorized_keys
+I, [2016-06-23T10:00:41.250988 #25326]  INFO -- default-oracle-linux:  ---> Running in e70fb8cacc8f
+I, [2016-06-23T10:00:44.882504 #25326]  INFO -- default-oracle-linux:  ---> c20a4e1cccfa
+I, [2016-06-23T10:00:46.670382 #25326]  INFO -- default-oracle-linux: Removing intermediate container e70fb8cacc8f
+I, [2016-06-23T10:00:46.670982 #25326]  INFO -- default-oracle-linux: Step 15 : RUN chown kitchen /home/kitchen/.ssh/authorized_keys
+I, [2016-06-23T10:00:46.872106 #25326]  INFO -- default-oracle-linux:  ---> Running in ed272706d8ab
+I, [2016-06-23T10:00:50.385698 #25326]  INFO -- default-oracle-linux:  ---> c5e81eac63a3
+I, [2016-06-23T10:00:52.163678 #25326]  INFO -- default-oracle-linux: Removing intermediate container ed272706d8ab
+I, [2016-06-23T10:00:52.164333 #25326]  INFO -- default-oracle-linux: Step 16 : RUN chmod 0600 /home/kitchen/.ssh/authorized_keys
+I, [2016-06-23T10:00:52.349578 #25326]  INFO -- default-oracle-linux:  ---> Running in 907c34241599
+I, [2016-06-23T10:00:55.864627 #25326]  INFO -- default-oracle-linux:  ---> 9a6bf265c400
+I, [2016-06-23T10:00:57.548188 #25326]  INFO -- default-oracle-linux: Removing intermediate container 907c34241599
+I, [2016-06-23T10:00:57.548777 #25326]  INFO -- default-oracle-linux: Successfully built 9a6bf265c400
+I, [2016-06-23T10:00:57.876892 #25326]  INFO -- default-oracle-linux: ef433ad41cba1ecb6b1f4fc198e5c7e95790108eb6fb820ffb5f7b22e75a8d4f
+I, [2016-06-23T10:00:58.482854 #25326]  INFO -- default-oracle-linux: 0.0.0.0:32772
+I, [2016-06-23T10:00:58.663583 #25326]  INFO -- default-oracle-linux: [SSH] Established
+I, [2016-06-23T10:00:58.668296 #25326]  INFO -- default-oracle-linux: Finished creating <default-oracle-linux> (3m41.40s).
+I, [2016-06-23T10:00:58.669071 #25326]  INFO -- default-oracle-linux: -----> Converging <default-oracle-linux>...
+W, [2016-06-23T10:00:58.670345 #25326]  WARN -- default-oracle-linux: Running legacy converge for 'Docker' Driver
+I, [2016-06-23T10:00:58.671770 #25326]  INFO -- default-oracle-linux: Preparing files for transfer
+I, [2016-06-23T10:00:58.672000 #25326]  INFO -- default-oracle-linux: Preparing dna.json
+I, [2016-06-23T10:00:58.673301 #25326]  INFO -- default-oracle-linux: Resolving cookbook dependencies with Berkshelf 4.1.1...
+I, [2016-06-23T10:00:58.745166 #25326]  INFO -- default-oracle-linux: Removing non-cookbook files before transfer
+I, [2016-06-23T10:00:58.748923 #25326]  INFO -- default-oracle-linux: Preparing validation.pem
+I, [2016-06-23T10:00:58.757704 #25326]  INFO -- default-oracle-linux: Preparing client.rb
+I, [2016-06-23T10:00:58.925279 #25326]  INFO -- default-oracle-linux: -----> Installing Chef Omnibus (install only if missing)
+I, [2016-06-23T10:00:58.935886 #25326]  INFO -- default-oracle-linux: Downloading https://www.chef.io/chef/install.sh to file /tmp/install.sh
+I, [2016-06-23T10:00:58.936813 #25326]  INFO -- default-oracle-linux: Trying curl...
+I, [2016-06-23T10:00:59.312085 #25326]  INFO -- default-oracle-linux: Download complete.
+I, [2016-06-23T10:00:59.373914 #25326]  INFO -- default-oracle-linux: el 7 x86_64
+I, [2016-06-23T10:00:59.374018 #25326]  INFO -- default-oracle-linux: Getting information for chef stable  for el...
+I, [2016-06-23T10:00:59.374161 #25326]  INFO -- default-oracle-linux: downloading https://omnitruck-direct.chef.io/stable/chef/metadata?v=&p=el&pv=7&m=x86_64
+I, [2016-06-23T10:00:59.374224 #25326]  INFO -- default-oracle-linux:   to file /tmp/install.sh.30/metadata.txt
+I, [2016-06-23T10:00:59.377725 #25326]  INFO -- default-oracle-linux: trying curl...
+I, [2016-06-23T10:00:59.851310 #25326]  INFO -- default-oracle-linux: sha1	4b0ecd14127fe6d0e5423f78a733ce43db1814c7
+I, [2016-06-23T10:00:59.851487 #25326]  INFO -- default-oracle-linux: sha256	a5d5db51eb57cdb0045953f4007f10bf50199c40c0d89c41272cf171d56b6c53
+I, [2016-06-23T10:00:59.851612 #25326]  INFO -- default-oracle-linux: url	https://packages.chef.io/stable/el/7/chef-12.11.18-1.el7.x86_64.rpm
+I, [2016-06-23T10:00:59.851679 #25326]  INFO -- default-oracle-linux: version	12.11.18
+I, [2016-06-23T10:00:59.858848 #25326]  INFO -- default-oracle-linux: downloaded metadata file looks valid...
+I, [2016-06-23T10:00:59.907355 #25326]  INFO -- default-oracle-linux: downloading https://packages.chef.io/stable/el/7/chef-12.11.18-1.el7.x86_64.rpm
+I, [2016-06-23T10:00:59.907495 #25326]  INFO -- default-oracle-linux:   to file /tmp/install.sh.30/chef-12.11.18-1.el7.x86_64.rpm
+I, [2016-06-23T10:00:59.909675 #25326]  INFO -- default-oracle-linux: trying curl...
+I, [2016-06-23T10:01:03.309136 #25326]  INFO -- default-oracle-linux: Comparing checksum with sha256sum...
+I, [2016-06-23T10:01:03.905329 #25326]  INFO -- default-oracle-linux: 
+I, [2016-06-23T10:01:03.905490 #25326]  INFO -- default-oracle-linux: WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING
+I, [2016-06-23T10:01:03.905554 #25326]  INFO -- default-oracle-linux: 
+I, [2016-06-23T10:01:03.905654 #25326]  INFO -- default-oracle-linux: You are installing an omnibus package without a version pin.  If you are installing
+I, [2016-06-23T10:01:03.905718 #25326]  INFO -- default-oracle-linux: on production servers via an automated process this is DANGEROUS and you will
+I, [2016-06-23T10:01:03.905823 #25326]  INFO -- default-oracle-linux: be upgraded without warning on new releases, even to new major releases.
+I, [2016-06-23T10:01:03.905884 #25326]  INFO -- default-oracle-linux: Letting the version float is only appropriate in desktop, test, development or
+I, [2016-06-23T10:01:03.905941 #25326]  INFO -- default-oracle-linux: CI/CD environments.
+I, [2016-06-23T10:01:03.905995 #25326]  INFO -- default-oracle-linux: 
+I, [2016-06-23T10:01:03.906102 #25326]  INFO -- default-oracle-linux: WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING WARNING
+I, [2016-06-23T10:01:03.906159 #25326]  INFO -- default-oracle-linux: 
+I, [2016-06-23T10:01:03.906213 #25326]  INFO -- default-oracle-linux: Installing chef 
+I, [2016-06-23T10:01:03.906328 #25326]  INFO -- default-oracle-linux: installing with rpm...
+I, [2016-06-23T10:01:04.046216 #25326]  INFO -- default-oracle-linux: warning: /tmp/install.sh.30/chef-12.11.18-1.el7.x86_64.rpm: Header V4 DSA/SHA1 Signature, key ID 83ef826a: NOKEY
+I, [2016-06-23T10:01:07.304374 #25326]  INFO -- default-oracle-linux: Preparing...                                                            (100%)#                                 (100%)##                                (100%)###                               (100%)####                              (100%)#####                             (100%)######                            (100%)#######                           (100%)########                          (100%)#########                         (100%)##########                        (100%)###########                       (100%)############                      (100%)#############                     (100%)##############                    (100%)###############                   (100%)################                  (100%)#################                 (100%)##################                (100%)###################               (100%)####################              (100%)#####################             (100%)######################            (100%)#######################           (100%)########################          (100%)#########################         (100%)##########################        (100%)###########################       (100%)############################      (100%)#############################     (100%)##############################    (100%)###############################   (100%)################################  (100%)################################# (100%)################################# [100%]
+I, [2016-06-23T10:01:07.658173 #25326]  INFO -- default-oracle-linux: Updating / installing...
+I, [2016-06-23T10:01:32.738248 #25326]  INFO -- default-oracle-linux:    1:chef-12.11.18-1.el7                                                (  1%)#                                 (  4%)##                                (  7%)###                               ( 10%)####                              ( 13%)#####                             ( 16%)######                            ( 19%)#######                           ( 22%)########                          ( 25%)#########                         ( 28%)##########                        ( 31%)###########                       ( 34%)############                      ( 37%)#############                     ( 40%)##############                    ( 43%)###############                   ( 46%)################                  ( 49%)#################                 ( 51%)##################                ( 54%)###################               ( 57%)####################              ( 60%)#####################             ( 63%)######################            ( 66%)#######################           ( 69%)########################          ( 72%)#########################         ( 75%)##########################        ( 78%)###########################       ( 81%)############################      ( 84%)#############################     ( 87%)##############################    ( 90%)###############################   ( 93%)################################  ( 96%)################################# ( 99%)################################# [100%]
+I, [2016-06-23T10:01:35.717098 #25326]  INFO -- default-oracle-linux: Thank you for installing Chef!
+I, [2016-06-23T10:01:35.928607 #25326]  INFO -- default-oracle-linux: Transferring files to <default-oracle-linux>
+I, [2016-06-23T10:01:38.855170 #25326]  INFO -- default-oracle-linux: Starting Chef Client, version 12.11.18
+I, [2016-06-23T10:01:42.550145 #25326]  INFO -- default-oracle-linux: Creating a new client identity for default-oracle-linux using the validator key.
+I, [2016-06-23T10:01:42.864091 #25326]  INFO -- default-oracle-linux: resolving cookbooks for run list: ["workstation::default"]
+I, [2016-06-23T10:01:42.911562 #25326]  INFO -- default-oracle-linux: Synchronizing Cookbooks:
+I, [2016-06-23T10:01:42.930745 #25326]  INFO -- default-oracle-linux:   - workstation (0.1.0)
+I, [2016-06-23T10:01:42.930830 #25326]  INFO -- default-oracle-linux: Installing Cookbook Gems:
+I, [2016-06-23T10:01:42.930892 #25326]  INFO -- default-oracle-linux: Compiling Cookbooks...
+I, [2016-06-23T10:01:42.942829 #25326]  INFO -- default-oracle-linux: Converging 3 resources
+I, [2016-06-23T10:01:42.944715 #25326]  INFO -- default-oracle-linux: Recipe: workstation::setup
+I, [2016-06-23T10:02:08.016141 #25326]  INFO -- default-oracle-linux:   * yum_package[tree] action install
+I, [2016-06-23T10:02:08.018161 #25326]  INFO -- default-oracle-linux:     - install version 1.6.0-10.el7 of package tree
+I, [2016-06-23T10:02:08.052044 #25326]  INFO -- default-oracle-linux:   * file[/etc/motd] action create
+I, [2016-06-23T10:02:08.052164 #25326]  INFO -- default-oracle-linux:     - update content in file /etc/motd from e3b0c4 to ee0a31
+I, [2016-06-23T10:02:08.052225 #25326]  INFO -- default-oracle-linux:     --- /etc/motd	2013-06-07 14:31:32.000000000 +0000
+I, [2016-06-23T10:02:08.052411 #25326]  INFO -- default-oracle-linux:     +++ /etc/.chef-motd20160623-149-1ii5k5l	2016-06-23 10:02:08.042248905 +0000
+I, [2016-06-23T10:02:08.052470 #25326]  INFO -- default-oracle-linux:     @@ -1 +1,2 @@
+I, [2016-06-23T10:02:08.113978 #25326]  INFO -- default-oracle-linux:     +Property of Carlos Picazo
+I, [2016-06-23T10:02:08.114098 #25326]  INFO -- default-oracle-linux: Recipe: workstation::git
+I, [2016-06-23T10:02:29.489239 #25326]  INFO -- default-oracle-linux:   * yum_package[git] action install
+I, [2016-06-23T10:02:29.490930 #25326]  INFO -- default-oracle-linux:     - install version 1.8.3.1-6.el7_2.1 of package git
+I, [2016-06-23T10:02:29.599081 #25326]  INFO -- default-oracle-linux: 
+I, [2016-06-23T10:02:29.600937 #25326]  INFO -- default-oracle-linux: Running handlers:
+I, [2016-06-23T10:02:29.601017 #25326]  INFO -- default-oracle-linux: Running handlers complete
+I, [2016-06-23T10:02:29.602764 #25326]  INFO -- default-oracle-linux: Chef Client finished, 3/3 resources updated in 50 seconds
+I, [2016-06-23T10:02:30.946821 #25326]  INFO -- default-oracle-linux: Finished converging <default-oracle-linux> (1m32.27s).

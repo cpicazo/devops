@@ -1,0 +1,7 @@
+name 'workstation'
+maintainer 'Carlos Picazo'
+maintainer_email 'cpikzo@gmail.com'
+license 'copyright minabo'
+description 'Installs/Configures workstation'
+long_description 'Installs/Configures workstation'
+version '0.2.0'

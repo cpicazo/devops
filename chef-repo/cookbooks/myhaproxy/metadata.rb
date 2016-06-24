@@ -1,0 +1,8 @@
+name 'myhaproxy'
+maintainer 'Carlos Picazo'
+maintainer_email 'cpikzo@gmail.com'
+license 'copyright minabo'
+description 'Installs/Configures myhaproxy'
+long_description 'Installs/Configures myhaproxy'
+version '0.2.0'
+depends 'haproxy', '~> 1.6.7'
